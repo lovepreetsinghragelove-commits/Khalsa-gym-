@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalsa Gym | Programs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a1a2c; }
+    :root { --primary: #e11d48; --primary-dark: #be123c; --shadow: 0 20px 35px -12px rgba(0,0,0,0.08); --card-border: #eef2ff; }
+    .navbar {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 18px rgba(0,0,0,0.03);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 0.9rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .logo h1 { font-size: 1.9rem; font-weight: 800; background: linear-gradient(130deg, #e11d48, #f97316); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; font-weight: 600; color: #1e293b; transition: 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+    .section { padding: 5rem 6%; border-bottom: 1px solid #f0f2f8; }
+    .container { max-width: 1280px; margin: 0 auto; }
+    .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; position: relative; display: inline-block; }
+    .section-title::after { content: ''; position: absolute; bottom: -12px; left: 0; width: 70px; height: 4px; background: var(--primary); border-radius: 4px; }
+    .programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .card { background: white; border-radius: 2rem; padding: 2rem 1.5rem; box-shadow: var(--shadow); border: 1px solid var(--card-border); transition: transform 0.25s; }
+    .card:hover { transform: translateY(-6px); }
+    .dumbbell-showcase {
+      margin-top: 3rem;
+      background: linear-gradient(145deg, #fef9f0, #ffffff);
+      border-radius: 2rem;
+      padding: 2rem 1.8rem;
+      border: 1px solid #ffe6cc;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .dumbbell-icons { display: flex; gap: 1.8rem; font-size: 3rem; color: #2d3e50; }
+    footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    @media (max-width: 800px) { .navbar { flex-direction: column; gap: 1rem; } .section { padding: 3rem 5%; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><h1>Khalsa GYM</h1></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html" class="active">Programs</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Modern Programs</h2>
+    <div class="programs-grid">
+      <div class="card">
+        <i class="fas fa-leaf" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>🔥 Weight Loss</h3>
+        <p>HIIT, cardio circuits & personalized diet tracking — sustainable transformation.</p>
+        <ul style="margin-top: 12px; list-style: none;">
+          <li>✓ Body composition analysis</li>
+          <li>✓ Group fat-burn sessions</li>
+        </ul>
+      </div>
+      <div class="card">
+        <i class="fas fa-person-walking-arrow-right" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>🤸 Calisthenics</h3>
+        <p>Street workout, muscle-ups, levers, and endurance mastery with expert coaches.</p>
+        <ul style="margin-top: 12px; list-style: none;">
+          <li>✓ Pull-up bars & parallel bars</li>
+          <li>✓ Progress tracking rings</li>
+        </ul>
+      </div>
+      <div class="card">
+        <i class="fas fa-weight-hanging" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>🏋️ Weight Lifting</h3>
+        <p>Powerlifting (squat/bench/deadlift) & Olympic lifting technique.</p>
+        <ul style="margin-top: 12px; list-style: none;">
+          <li>✓ Competition platforms</li>
+          <li>✓ 1-on-1 strength coaching</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dumbbell-showcase">
+      <div>
+        <h3><i class="fas fa-dumbbell"></i> Premium Dumbbell Zone</h3>
+        <p>Hex dumbbells from 2kg to 50kg • Adjustable benches • Full free-weight section</p>
+        <p><strong>Showcasing Dummbles:</strong> Professional rubber-coated dumbbells, kettlebells, and pro-grade racks.</p>
+      </div>
+      <div class="dumbbell-icons">
+        <i class="fas fa-dumbbell fa-2x"></i>
+        <i class="fas fa-dumbbell fa-2x"></i>
+        <i class="fas fa-dumbbell fa-2x"></i>
+        <i class="fas fa-weight-scale"></i>
+      </div>
+    </div>
+    <p style="margin-top: 1.5rem; text-align: center;"><i class="fas fa-check-circle" style="color: var(--primary);"></i> Heavy dumbbells, EZ bars & specialist equipment — available for all members</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Khalsa Gym — Transform with us</p>
+</footer>
+
+</body>
+</html>

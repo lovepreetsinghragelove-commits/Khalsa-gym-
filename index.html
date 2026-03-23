@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalsa Gym | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a1a2c;
+    }
+    :root {
+      --primary: #e11d48;
+      --primary-dark: #be123c;
+      --shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+      --card-border: #eef2ff;
+    }
+    .navbar {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 18px rgba(0,0,0,0.03);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 0.9rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      background: linear-gradient(130deg, #e11d48, #f97316);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1e293b;
+      transition: 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+    .section {
+      padding: 5rem 6%;
+      border-bottom: 1px solid #f0f2f8;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 70px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+    .grid-3, .feedback-grid, .pricing-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--card-border);
+      transition: transform 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .price-card {
+      text-align: center;
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 1.8rem;
+      box-shadow: var(--shadow);
+    }
+    .price {
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+    .btn {
+      background: var(--primary);
+      border: none;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: scale(0.97);
+    }
+    .feedback-card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+      border: 1px solid #f1f1f1;
+    }
+    .stars {
+      color: #fbbf24;
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 800px) {
+      .navbar { flex-direction: column; gap: 1rem; }
+      .section { padding: 3rem 5%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><h1>KHALSA  GYM 
+    
+  </h1></div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <span style="font-weight: 600; color: var(--primary);">BUILD YOUR LEGACY</span>
+    <h2 class="section-title">Elite Fitness Starts Here</h2>
+    <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 2rem;">State-of-the-art equipment, expert coaches, and a community that pushes limits.</p>
+
+    <h3 style="font-size: 1.8rem; margin: 2rem 0 1rem 0;">🔥 Featured Programs</h3>
+    <div class="grid-3">
+      <div class="card">
+        <i class="fas fa-fire" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>Weight Loss</h3>
+        <p>High-intensity cardio & nutrition plans to melt fat efficiently.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hand-fist" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>Calisthenics</h3>
+        <p>Master bodyweight strength, endurance & advanced skills.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-dumbbell" style="font-size: 2.5rem; color: var(--primary);"></i>
+        <h3>Weight Lifting</h3>
+        <p>Powerlifting & Olympic lifting to build raw strength.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.8rem; margin: 3rem 0 1rem 0;">💰 Membership Plans</h3>
+    <div class="pricing-preview">
+      <div class="price-card">
+        <h3>Monthly Pass</h3>
+        <div class="price">999<span style="font-size: 1rem;">/mo</span></div>
+        <p>Full access • No commitment</p>
+        <a href="pricing.html" class="btn" style="margin-top: 1rem;">View Details</a>
+      </div>
+      <div class="price-card">
+        <h3>Yearly Pass</h3>
+        <div class="price">9999<span style="font-size: 1rem;">/year</span></div>
+        <p>🔥 Save 2000 + Bonus gifts</p>
+        <a href="pricing.html" class="btn" style="margin-top: 1rem;">Explore Perks</a>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.8rem; margin: 3rem 0 1rem 0;">⭐ Member Reviews</h3>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Khalsa Gym changed my life! The trainers are top tier and the atmosphere is electric."</p>
+        <strong>- Arjun Mehta</strong>
+      </div>
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Weight loss program is incredible. Lost 12kg in 3 months. Highly recommend!"</p>
+        <strong>- Simran Kaur</strong>
+      </div>
+      <div class="feedback-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Best calisthenics zone in town. Dumbbell racks are insane, always well maintained."</p>
+        <strong>- Rahul Verma</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Khalsa Gym — Strength, Discipline, Results</p>
+</footer>
+
+</body>
+</html>
